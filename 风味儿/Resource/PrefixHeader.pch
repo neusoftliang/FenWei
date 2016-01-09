@@ -9,6 +9,26 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #define kBaseImagePath @"http://tnfs.tngou.net/image"
+//数据库
+#define kDatabaseName @"cart.sqlite"
+#define kTableName_Food @"t_food"
+#define kTableName_Material @"t_material"
+/**
+ *  t_foodMaterials的列名
+ */
+#define kt_foodMaterials_materialName @"materialName"
+#define kt_foodMaterials_materialNum @"materialNum"
+#define kt_foodMaterials_materialUnit @"materialUnit"
+#define kt_foodMaterials_foodID @"foodID"
+#define kt_foodMaterials_materialID @"materialID"
+/**
+ *  t_food的列名
+ */
+#define kt_food_foodName @"foodName"
+#define kt_food_foodinsertDate @"foodinsertDate"
+#define kt_food_foodImg @"foodImg"
+#define kt_food_foodID @"foodID"
+#define kt_food_foodMaterial @"foodMaterial"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 //只要有网络操作
@@ -23,7 +43,7 @@
 #import "UIScrollView+Refresh.h"
 
 /*按照功能需求 可选  */
-//#import <FMDB.h>
+#import <FMDB.h>
 //#import <CocoaAsyncSocket.h>
 //......
 #import <MBProgressHUD.h>

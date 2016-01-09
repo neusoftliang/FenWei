@@ -20,6 +20,9 @@
 		9D7D7CBE1C3E879200B42438 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D7CBD1C3E879200B42438 /* UIScrollView+Refresh.m */; };
 		9D8A61DD1C3D59A20004A302 /* MenuSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A61DB1C3D59A20004A302 /* MenuSortCell.m */; };
 		9D8A61DE1C3D59A20004A302 /* MenuSortCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8A61DC1C3D59A20004A302 /* MenuSortCell.xib */; };
+		9D8FDE541C40B9EA001AC345 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8FDE531C40B9EA001AC345 /* libsqlite3.tbd */; };
+		9D8FDE581C40DB2A001AC345 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FDE571C40DB2A001AC345 /* DatabaseManager.m */; };
+		9D8FDE5B1C40FA16001AC345 /* FoodMaterialsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FDE5A1C40FA16001AC345 /* FoodMaterialsModel.m */; };
 		9DB180431C3FB4CB00594C36 /* MenuSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB180421C3FB4CB00594C36 /* MenuSearchModel.m */; };
 		9DBA96EC1C3CAE9F00E38157 /* MenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DBA96EB1C3CAE9F00E38157 /* MenuList.plist */; };
 		9DBA96F91C3CBCBD00E38157 /* MenuListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA96F81C3CBCBD00E38157 /* MenuListModel.m */; };
@@ -84,6 +87,11 @@
 		9D8A61DA1C3D59A20004A302 /* MenuSortCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSortCell.h; sourceTree = "<group>"; };
 		9D8A61DB1C3D59A20004A302 /* MenuSortCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSortCell.m; sourceTree = "<group>"; };
 		9D8A61DC1C3D59A20004A302 /* MenuSortCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuSortCell.xib; sourceTree = "<group>"; };
+		9D8FDE531C40B9EA001AC345 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D8FDE561C40DB2A001AC345 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		9D8FDE571C40DB2A001AC345 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		9D8FDE591C40FA16001AC345 /* FoodMaterialsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodMaterialsModel.h; sourceTree = "<group>"; };
+		9D8FDE5A1C40FA16001AC345 /* FoodMaterialsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodMaterialsModel.m; sourceTree = "<group>"; };
 		9DB180411C3FB4CB00594C36 /* MenuSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSearchModel.h; sourceTree = "<group>"; };
 		9DB180421C3FB4CB00594C36 /* MenuSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSearchModel.m; sourceTree = "<group>"; };
 		9DBA96EB1C3CAE9F00E38157 /* MenuList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuList.plist; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8FDE541C40B9EA001AC345 /* libsqlite3.tbd in Frameworks */,
 				C823695B158615A4BB8FF45A /* libPods-风味儿.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +245,8 @@
 			children = (
 				9D7D7CA01C3DEDAB00B42438 /* MenuSortSingleton.h */,
 				9D7D7CA11C3DEDAB00B42438 /* MenuSortSingleton.m */,
+				9D8FDE561C40DB2A001AC345 /* DatabaseManager.h */,
+				9D8FDE571C40DB2A001AC345 /* DatabaseManager.m */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -253,6 +264,8 @@
 				9DBA97011C3CC0CF00E38157 /* BaseModel.m */,
 				9D7D7CA31C3DF1D500B42438 /* MenuSortModel.h */,
 				9D7D7CA41C3DF1D500B42438 /* MenuSortModel.m */,
+				9D8FDE591C40FA16001AC345 /* FoodMaterialsModel.h */,
+				9D8FDE5A1C40FA16001AC345 /* FoodMaterialsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -532,6 +545,7 @@
 		C8BCF1843FB5C1D3674AD1BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D8FDE531C40B9EA001AC345 /* libsqlite3.tbd */,
 				86C8F2E02EDFB83B26B9D35E /* libPods-风味儿.a */,
 			);
 			name = Frameworks;
@@ -723,9 +737,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7D7CB81C3E1DA400B42438 /* Foundation+Log.m in Sources */,
+				9D8FDE5B1C40FA16001AC345 /* FoodMaterialsModel.m in Sources */,
 				9DBA97141C3CD8CE00E38157 /* MenuSearchNetManager.m in Sources */,
 				9DE95F761C3BF8EB0061BCF1 /* AppDelegate.m in Sources */,
 				9D7D7CA51C3DF1D500B42438 /* MenuSortModel.m in Sources */,
+				9D8FDE581C40DB2A001AC345 /* DatabaseManager.m in Sources */,
 				9D7D7CAC1C3DFF9100B42438 /* MenuViewController.m in Sources */,
 				9DBA970B1C3CD49C00E38157 /* NetManager.m in Sources */,
 				9DBA96F91C3CBCBD00E38157 /* MenuListModel.m in Sources */,

@@ -9,6 +9,7 @@
 #import "FoodShowView.h"
 #import "MenuDescModel.h"
 #import "MenuDescNetManager.h"
+#import "DatabaseManager.h"
 #import <WebKit/WebKit.h>
 @interface FoodShowView ()
 @property (strong,nonatomic) MenuDescModel *food;
@@ -24,6 +25,7 @@
     NSLog(@"foodID%lu",food_ID);
     [MenuDescNetManager getMenuDescByListID:food_ID completionHandle:^(id model, NSError *error) {
         MenuDescModel *foodDescModel = (MenuDescModel*)model;
+        self.food = foodDescModel;
         _foodName_label.text = foodDescModel.name;
         
         [_foodImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kBaseImagePath,foodDescModel.img]] placeholderImage:[UIImage imageNamed:@"placeImage"]];
@@ -111,7 +113,43 @@
             make.centerY.mas_equalTo(foodView.mas_top);
             make.size.mas_equalTo(CGSizeMake(40, 40));
         }];
+#pragma mark --- 配置购菜车按钮
+        UIButton *cart_btn = [[UIButton alloc]init];
+        [cart_btn setBackgroundImage:[UIImage imageNamed:@"cart_btn"] forState:UIControlStateNormal];
+        [self addSubview:cart_btn];
+        [cart_btn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(-8);
+            make.centerX.mas_equalTo(self);
+            make.size.mas_equalTo(CGSizeMake(50, 50));
+        }];
+        [cart_btn bk_addEventHandler:^(id sender) {
+            [cart_btn.superview layoutIfNeeded];
+            [UIView animateWithDuration:1.4 animations:^{
+                [cart_btn mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.centerX.mas_equalTo(self.mas_centerX);
+                    make.size.mas_equalTo(CGSizeMake(100, 100));
+                    make.bottom.mas_equalTo(-300);
+                }];
+                [cart_btn setAlpha:0];
+                [cart_btn.superview layoutIfNeeded];
+            }];
+            [self insertDB];
+        } forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
+}
+
+-(BOOL)insertDB
+{
+    __block BOOL flag = NO;
+    [DatabaseManager openDatabase:^(FMDatabase *db, BOOL isSuccess) {
+        flag = isSuccess;
+        NSLog(@"%d",isSuccess);
+        if (isSuccess) {
+            NSLog(@"self.food%@",self.food);
+            [DatabaseManager excuteDatabase:db By:self.food FuncSelect:INSERTDATA];
+        }
+    }];
+    return flag;
 }
 @end

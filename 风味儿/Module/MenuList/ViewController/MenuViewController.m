@@ -22,6 +22,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor whiteColor];
     [self configTableView];
     [self getDataFromServer];
@@ -113,6 +114,6 @@
     if (temp>=5.0) {
         [[SDImageCache sharedImageCache]clearDisk];
     }
-    
+    [self.view removeFromSuperview];
 }
 @end

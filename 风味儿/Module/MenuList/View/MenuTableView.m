@@ -10,6 +10,8 @@
 #import "TableViewCell.h"
 #import "MenuListModel.h"
 #import "FoodShowView.h"
+@interface MenuTableView()
+@end
 @implementation MenuTableView
 
 -(instancetype)init
