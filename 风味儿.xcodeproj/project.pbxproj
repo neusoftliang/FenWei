@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D295D791C3FA16500BA263A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D295D781C3FA16500BA263A /* Main.storyboard */; };
+		9D6CB8F41C41E77C0047EDBE /* MaterialMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB8F31C41E77C0047EDBE /* MaterialMenuViewController.m */; };
 		9D7276671C3F337F006C122F /* FoodShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7276661C3F337F006C122F /* FoodShowView.m */; };
 		9D7D7CA21C3DEDAB00B42438 /* MenuSortSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D7CA11C3DEDAB00B42438 /* MenuSortSingleton.m */; };
 		9D7D7CA51C3DF1D500B42438 /* MenuSortModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D7CA41C3DF1D500B42438 /* MenuSortModel.m */; };
@@ -23,6 +24,9 @@
 		9D8FDE541C40B9EA001AC345 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8FDE531C40B9EA001AC345 /* libsqlite3.tbd */; };
 		9D8FDE581C40DB2A001AC345 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FDE571C40DB2A001AC345 /* DatabaseManager.m */; };
 		9D8FDE5B1C40FA16001AC345 /* FoodMaterialsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FDE5A1C40FA16001AC345 /* FoodMaterialsModel.m */; };
+		9D8FDE601C412240001AC345 /* MaterialCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FDE5F1C412240001AC345 /* MaterialCartViewController.m */; };
+		9D8FDE6D1C413AEE001AC345 /* MaterialMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8FDE6B1C413AEE001AC345 /* MaterialMenuCell.m */; };
+		9D8FDE6E1C413AEE001AC345 /* MaterialMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8FDE6C1C413AEE001AC345 /* MaterialMenuCell.xib */; };
 		9DB180431C3FB4CB00594C36 /* MenuSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB180421C3FB4CB00594C36 /* MenuSearchModel.m */; };
 		9DBA96EC1C3CAE9F00E38157 /* MenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DBA96EB1C3CAE9F00E38157 /* MenuList.plist */; };
 		9DBA96F91C3CBCBD00E38157 /* MenuListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA96F81C3CBCBD00E38157 /* MenuListModel.m */; };
@@ -66,6 +70,8 @@
 		45AE195A85ACC63EA7C18BF1 /* Pods-风味儿.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-风味儿.release.xcconfig"; path = "Pods/Target Support Files/Pods-风味儿/Pods-风味儿.release.xcconfig"; sourceTree = "<group>"; };
 		86C8F2E02EDFB83B26B9D35E /* libPods-风味儿.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-风味儿.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D295D781C3FA16500BA263A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D6CB8F21C41E77C0047EDBE /* MaterialMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialMenuViewController.h; sourceTree = "<group>"; };
+		9D6CB8F31C41E77C0047EDBE /* MaterialMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialMenuViewController.m; sourceTree = "<group>"; };
 		9D7276651C3F337F006C122F /* FoodShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodShowView.h; sourceTree = "<group>"; };
 		9D7276661C3F337F006C122F /* FoodShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodShowView.m; sourceTree = "<group>"; };
 		9D7D7CA01C3DEDAB00B42438 /* MenuSortSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSortSingleton.h; sourceTree = "<group>"; };
@@ -92,6 +98,11 @@
 		9D8FDE571C40DB2A001AC345 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		9D8FDE591C40FA16001AC345 /* FoodMaterialsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodMaterialsModel.h; sourceTree = "<group>"; };
 		9D8FDE5A1C40FA16001AC345 /* FoodMaterialsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodMaterialsModel.m; sourceTree = "<group>"; };
+		9D8FDE5E1C412240001AC345 /* MaterialCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialCartViewController.h; sourceTree = "<group>"; };
+		9D8FDE5F1C412240001AC345 /* MaterialCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialCartViewController.m; sourceTree = "<group>"; };
+		9D8FDE6A1C413AEE001AC345 /* MaterialMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialMenuCell.h; sourceTree = "<group>"; };
+		9D8FDE6B1C413AEE001AC345 /* MaterialMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialMenuCell.m; sourceTree = "<group>"; };
+		9D8FDE6C1C413AEE001AC345 /* MaterialMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialMenuCell.xib; sourceTree = "<group>"; };
 		9DB180411C3FB4CB00594C36 /* MenuSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSearchModel.h; sourceTree = "<group>"; };
 		9DB180421C3FB4CB00594C36 /* MenuSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSearchModel.m; sourceTree = "<group>"; };
 		9DBA96EB1C3CAE9F00E38157 /* MenuList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuList.plist; sourceTree = "<group>"; };
@@ -222,6 +233,27 @@
 			children = (
 				9D7D7CAA1C3DFF9100B42438 /* MenuViewController.h */,
 				9D7D7CAB1C3DFF9100B42438 /* MenuViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D8FDE5C1C4121C0001AC345 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D8FDE6A1C413AEE001AC345 /* MaterialMenuCell.h */,
+				9D8FDE6B1C413AEE001AC345 /* MaterialMenuCell.m */,
+				9D8FDE6C1C413AEE001AC345 /* MaterialMenuCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D8FDE5D1C4121E5001AC345 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D8FDE5E1C412240001AC345 /* MaterialCartViewController.h */,
+				9D8FDE5F1C412240001AC345 /* MaterialCartViewController.m */,
+				9D6CB8F21C41E77C0047EDBE /* MaterialMenuViewController.h */,
+				9D6CB8F31C41E77C0047EDBE /* MaterialMenuViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -410,6 +442,8 @@
 		9DBA96F01C3CB84300E38157 /* MenuMaterialCart */ = {
 			isa = PBXGroup;
 			children = (
+				9D8FDE5D1C4121E5001AC345 /* ViewController */,
+				9D8FDE5C1C4121C0001AC345 /* View */,
 			);
 			path = MenuMaterialCart;
 			sourceTree = "<group>";
@@ -658,6 +692,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D295D791C3FA16500BA263A /* Main.storyboard in Resources */,
+				9D8FDE6E1C413AEE001AC345 /* MaterialMenuCell.xib in Resources */,
 				9D8A61DE1C3D59A20004A302 /* MenuSortCell.xib in Resources */,
 				9D7D7CB41C3E00C700B42438 /* TableViewCell.xib in Resources */,
 				9DE95F811C3BF8EB0061BCF1 /* LaunchScreen.storyboard in Resources */,
@@ -736,11 +771,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6CB8F41C41E77C0047EDBE /* MaterialMenuViewController.m in Sources */,
 				9D7D7CB81C3E1DA400B42438 /* Foundation+Log.m in Sources */,
+				9D8FDE6D1C413AEE001AC345 /* MaterialMenuCell.m in Sources */,
 				9D8FDE5B1C40FA16001AC345 /* FoodMaterialsModel.m in Sources */,
 				9DBA97141C3CD8CE00E38157 /* MenuSearchNetManager.m in Sources */,
 				9DE95F761C3BF8EB0061BCF1 /* AppDelegate.m in Sources */,
 				9D7D7CA51C3DF1D500B42438 /* MenuSortModel.m in Sources */,
+				9D8FDE601C412240001AC345 /* MaterialCartViewController.m in Sources */,
 				9D8FDE581C40DB2A001AC345 /* DatabaseManager.m in Sources */,
 				9D7D7CAC1C3DFF9100B42438 /* MenuViewController.m in Sources */,
 				9DBA970B1C3CD49C00E38157 /* NetManager.m in Sources */,

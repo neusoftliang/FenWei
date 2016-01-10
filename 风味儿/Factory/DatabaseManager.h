@@ -34,7 +34,7 @@ typedef enum{
 /**
  *  操作数据库
  */
-+(BOOL)excuteDatabase:(FMDatabase *)db By:(id)data FuncSelect:(dbHandle)handle;
++(BOOL)excuteDatabase:(FMDatabase *)db SQL:(NSString *)sql By:(id)data FuncSelect:(dbHandle)handle;
 /**
  *  关闭数据库
  */

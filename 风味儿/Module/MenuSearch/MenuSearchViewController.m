@@ -69,7 +69,6 @@
 {
     [super viewWillDisappear:animated];
     self.menuListTabel.FoodList_array = nil;
-    [self.menuListTabel removeFromSuperview];
     [self searchBarCancelButtonClicked:self.searchBar];
 }
 @end

@@ -44,6 +44,7 @@
 
 /*按照功能需求 可选  */
 #import <FMDB.h>
+#import "DatabaseManager.h"
 //#import <CocoaAsyncSocket.h>
 //......
 #import <MBProgressHUD.h>

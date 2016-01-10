@@ -147,7 +147,8 @@
         NSLog(@"%d",isSuccess);
         if (isSuccess) {
             NSLog(@"self.food%@",self.food);
-            [DatabaseManager excuteDatabase:db By:self.food FuncSelect:INSERTDATA];
+            [DatabaseManager excuteDatabase:db SQL:nil By:self.food FuncSelect:INSERTDATA];
+            [DatabaseManager closeDatabase:db];
         }
     }];
     return flag;

@@ -7,16 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Materials;
 @interface FoodMaterialsModel : NSObject
-
 @property (assign,nonatomic) NSInteger food_ID;
-@property (strong,nonatomic) NSArray <Materials *>* materials;
-
-@end
-
-@interface Materials : NSObject
-
 @property (assign,nonatomic) NSInteger material_ID;
 @property (strong,nonatomic) NSString *materialName ;
 @property (strong,nonatomic) NSString *materialUnit ;

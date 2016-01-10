@@ -19,11 +19,11 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (dbisSucess) {
-            NSString *sqlCreateTable1 =  [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' INTEGER PRIMARY KEY AUTOINCREMENT, '%@' TEXT, '%@' TEXT, '%@' TEXT ,'%@' INTEGER)",
+            NSString *sqlCreateTable1 =  [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' INTEGER , '%@' TEXT, '%@' TEXT, '%@' TEXT ,'%@' INTEGER)",
                                         kTableName_Food,kt_food_foodID,kt_food_foodName,kt_food_foodImg,kt_food_foodMaterial,kt_food_foodinsertDate];
             BOOL res = [db executeUpdate:sqlCreateTable1];
             
-            NSString *sqlCreateTable2 =  [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' INTEGER PRIMARY KEY AUTOINCREMENT, '%@' INTEGER, '%@' TEXT, '%@' INTEGER ,'%@' TEXT)",kTableName_Material,kt_foodMaterials_foodID,kt_foodMaterials_materialID,
+            NSString *sqlCreateTable2 =  [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' INTEGER , '%@' INTEGER, '%@' TEXT, '%@' INTEGER ,'%@' TEXT)",kTableName_Material,kt_foodMaterials_foodID,kt_foodMaterials_materialID,
                 kt_foodMaterials_materialName,
                 kt_foodMaterials_materialNum,
                 kt_foodMaterials_materialUnit];
@@ -43,7 +43,7 @@
     });
     openBlock(db,dbisSucess);
 }
-+(BOOL)excuteDatabase:(FMDatabase *)db By:(id)data FuncSelect:(dbHandle)handle
++(BOOL)excuteDatabase:(FMDatabase *)db SQL:(NSString *)sql By:(id)data FuncSelect:(dbHandle)handle
 {
     
     if ([db open])
@@ -63,22 +63,20 @@
                else if([data isKindOfClass:[FoodMaterialsModel class]])
                {
                    FoodMaterialsModel *foodMaterial = (FoodMaterialsModel *)data;
-                   for (Materials *materials in foodMaterial.materials) {
-                       NSString *insertSql1= [NSString stringWithFormat:
-                                              @"INSERT INTO '%@' ('%@', '%@', '%@' , '%@', '%@') VALUES ('%ld', '%ld', '%@', '%ld', '%@')",
-                                              kTableName_Material,
-                                              kt_foodMaterials_foodID,
-                                              kt_foodMaterials_materialID,
-                                              kt_foodMaterials_materialName,
-                                              kt_foodMaterials_materialNum,
-                                              kt_foodMaterials_materialUnit,foodMaterial.food_ID ,materials.material_ID ,materials.materialName,materials.materialNum, materials.materialUnit];
-                       if (![db executeUpdate:insertSql1])
-                       {
-                           return NO;
-                       }
-                       
-                   }
-                   return YES;
+                   
+                   NSString *insertSql1= [NSString stringWithFormat:
+                                          @"INSERT INTO '%@' ('%@', '%@', '%@' , '%@', '%@') VALUES ('%ld', '%ld', '%@', '%ld', '%@')",
+                                          kTableName_Material,
+                                          kt_foodMaterials_foodID,
+                                          kt_foodMaterials_materialID,
+                                          kt_foodMaterials_materialName,
+                                          kt_foodMaterials_materialNum,
+                                          kt_foodMaterials_materialUnit,foodMaterial.food_ID ,foodMaterial.material_ID ,foodMaterial.materialName,foodMaterial.materialNum, foodMaterial.materialUnit];
+                   if (![db executeUpdate:insertSql1])
+                   {
+                       return NO;
+                   }else
+                       return YES;
                    
                }else
                {
