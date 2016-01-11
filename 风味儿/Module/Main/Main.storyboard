@@ -25,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="289"/>
+            <point key="canvasLocation" x="641" y="785"/>
         </scene>
         <!--菜单-->
         <scene sceneID="HPG-b6-ICh">
@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vK8-WY-bea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="289"/>
+            <point key="canvasLocation" x="641" y="1463"/>
         </scene>
         <!--首页-->
         <scene sceneID="DOm-bB-XxF">
@@ -63,7 +63,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrM-Ka-oAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="289"/>
+            <point key="canvasLocation" x="641" y="95"/>
         </scene>
         <!--搜索-->
         <scene sceneID="4Jl-8x-NqV">
@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZ4-Ei-GW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="929"/>
+            <point key="canvasLocation" x="985" y="785"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ve0-xE-rnb">
@@ -97,11 +97,12 @@
                         <segue destination="SaP-RT-S1r" kind="relationship" relationship="viewControllers" id="B8s-og-gN0"/>
                         <segue destination="UsV-aW-kYc" kind="relationship" relationship="viewControllers" id="Hb0-dH-8aP"/>
                         <segue destination="NZW-Dv-ab7" kind="relationship" relationship="viewControllers" id="CoZ-S0-bMd"/>
+                        <segue destination="zWq-me-B7w" kind="relationship" relationship="viewControllers" id="LC7-1R-mhX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6z-Ht-sVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="496"/>
+            <point key="canvasLocation" x="1331" y="-676"/>
         </scene>
         <!--搜索-->
         <scene sceneID="1ba-Br-LZr">
@@ -120,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibV-aB-UOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="929"/>
+            <point key="canvasLocation" x="985" y="95"/>
         </scene>
         <!--菜筐-->
         <scene sceneID="yGd-c2-liE">
@@ -135,14 +136,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="菜筐" id="SOf-ka-T5v"/>
+                    <navigationItem key="navigationItem" title="菜筐" id="SOf-ka-T5v">
+                        <barButtonItem key="rightBarButtonItem" title="全部清空" id="TyW-iJ-RGM">
+                            <connections>
+                                <action selector="deleteAll:" destination="9v7-vm-8UF" id="BvE-pQ-f2v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="azE-Vw-vbP" kind="push" identifier="menu" id="nSj-2c-Rq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipP-HM-7mP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="1559"/>
+            <point key="canvasLocation" x="1331" y="785"/>
         </scene>
         <!--购菜清单-->
         <scene sceneID="Yzj-u5-741">
@@ -396,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtP-db-9OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="1559"/>
+            <point key="canvasLocation" x="1331" y="1463"/>
         </scene>
         <!--购菜筐-->
         <scene sceneID="QKL-nr-MlB">
@@ -415,7 +422,45 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfM-0O-fYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="1559"/>
+            <point key="canvasLocation" x="1331" y="95"/>
+        </scene>
+        <!--定时-->
+        <scene sceneID="Tu8-ER-67R">
+            <objects>
+                <viewController id="eBb-ju-pEm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="01m-Ts-bf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="M5B-6a-PDH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3LI-tT-jL4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="定时" id="vA6-9n-FfV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GA3-TH-B9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="785"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="MYz-fE-4PE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zWq-me-B7w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="eCY-HH-xpb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u0Q-93-6cu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eBb-ju-pEm" kind="relationship" relationship="rootViewController" id="f1a-3a-vFM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxj-w8-8vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="95"/>
         </scene>
     </scenes>
     <resources>

@@ -16,7 +16,18 @@
 @end
 
 @implementation MaterialCartViewController
-
+- (NSMutableArray *)menuList_mutArry {
+    if(_menuList_mutArry == nil) {
+        _menuList_mutArry = [NSMutableArray array];
+    }
+    return _menuList_mutArry;
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.menuList_mutArry removeAllObjects];
+    [self getDataFromDB];
+}
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
@@ -99,16 +110,19 @@
         }
     }];
 }
-- (NSMutableArray *)menuList_mutArry {
-	if(_menuList_mutArry == nil) {
-		_menuList_mutArry = [NSMutableArray array];
-	}
-	return _menuList_mutArry;
-}
--(void)viewWillAppear:(BOOL)animated
+- (IBAction)deleteAll:(id)sender
 {
-    [super viewWillAppear:animated];
-    [self.menuList_mutArry removeAllObjects];
-    [self getDataFromDB];
+    NSString *sql = [NSString stringWithFormat:@"delete from %@ where 1=1",kTableName_Food];
+    [DatabaseManager openDatabase:^(FMDatabase *db, BOOL isSuccess) {
+        if (isSuccess) {
+            if ([DatabaseManager excuteDatabase:db SQL:sql By:nil FuncSelect:DELETEDATA])
+            {
+                [self.menuList_mutArry removeAllObjects];
+                [self.listTableView reloadData];
+            }
+        }
+        
+    }];
+    
 }
 @end

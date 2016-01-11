@@ -86,7 +86,7 @@
             }
                 break;
             case DELETEDATA:
-                return YES;
+                return [db executeUpdate:sql];
                 break;
             case UPDATEDATA:
                 return YES;
