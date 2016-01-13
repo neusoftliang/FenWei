@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound categories:nil]];
+    }
+    else {
+        [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge];
+    }
     return YES;
 }
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
@@ -49,5 +55,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    
+    [[UIApplication sharedApplication] cancelLocalNotification:notification];
+}
 @end

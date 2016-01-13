@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D085C0E1C43909E002F3273 /* BEMAnalogClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D085C0B1C43909E002F3273 /* BEMAnalogClockView.m */; };
+		9D085C0F1C43909E002F3273 /* KSMHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D085C0D1C43909E002F3273 /* KSMHand.m */; };
+		9D085C121C439359002F3273 /* CookTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D085C111C439359002F3273 /* CookTimerViewController.m */; };
 		9D295D791C3FA16500BA263A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D295D781C3FA16500BA263A /* Main.storyboard */; };
 		9D6CB8F41C41E77C0047EDBE /* MaterialMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB8F31C41E77C0047EDBE /* MaterialMenuViewController.m */; };
 		9D7276671C3F337F006C122F /* FoodShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7276661C3F337F006C122F /* FoodShowView.m */; };
@@ -45,6 +48,8 @@
 		9DE95F811C3BF8EB0061BCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE95F7F1C3BF8EB0061BCF1 /* LaunchScreen.storyboard */; };
 		9DE95F8C1C3BF8EB0061BCF1 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE95F8B1C3BF8EB0061BCF1 /* ___Tests.m */; };
 		9DE95F971C3BF8EB0061BCF1 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE95F961C3BF8EB0061BCF1 /* ___UITests.m */; };
+		9DEF4A531C4496000039DDEE /* ClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEF4A521C4496000039DDEE /* ClockTableViewCell.m */; };
+		9DEF4A561C44D3650039DDEE /* AddTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEF4A551C44D3650039DDEE /* AddTimerViewController.m */; };
 		9DF8B6911C3F9D2A00BE4066 /* MenuSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8B6901C3F9D2A00BE4066 /* MenuSearchViewController.m */; };
 		C823695B158615A4BB8FF45A /* libPods-风味儿.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C8F2E02EDFB83B26B9D35E /* libPods-风味儿.a */; };
 /* End PBXBuildFile section */
@@ -69,6 +74,12 @@
 /* Begin PBXFileReference section */
 		45AE195A85ACC63EA7C18BF1 /* Pods-风味儿.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-风味儿.release.xcconfig"; path = "Pods/Target Support Files/Pods-风味儿/Pods-风味儿.release.xcconfig"; sourceTree = "<group>"; };
 		86C8F2E02EDFB83B26B9D35E /* libPods-风味儿.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-风味儿.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D085C0A1C43909E002F3273 /* BEMAnalogClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnalogClockView.h; sourceTree = "<group>"; };
+		9D085C0B1C43909E002F3273 /* BEMAnalogClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnalogClockView.m; sourceTree = "<group>"; };
+		9D085C0C1C43909E002F3273 /* KSMHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMHand.h; sourceTree = "<group>"; };
+		9D085C0D1C43909E002F3273 /* KSMHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMHand.m; sourceTree = "<group>"; };
+		9D085C101C439359002F3273 /* CookTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CookTimerViewController.h; path = ../CookTimerViewController.h; sourceTree = "<group>"; };
+		9D085C111C439359002F3273 /* CookTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CookTimerViewController.m; path = ../CookTimerViewController.m; sourceTree = "<group>"; };
 		9D295D781C3FA16500BA263A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9D6CB8F21C41E77C0047EDBE /* MaterialMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialMenuViewController.h; sourceTree = "<group>"; };
 		9D6CB8F31C41E77C0047EDBE /* MaterialMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialMenuViewController.m; sourceTree = "<group>"; };
@@ -127,6 +138,7 @@
 		9DBA97151C3CDD0D00E38157 /* URLPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLPath.h; sourceTree = "<group>"; };
 		9DBA971D1C3CEBC700E38157 /* MenuSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSortViewController.h; sourceTree = "<group>"; };
 		9DBA971E1C3CEBC700E38157 /* MenuSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSortViewController.m; sourceTree = "<group>"; };
+		9DCD54621C460395003DC3F5 /* bg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.caf; sourceTree = "<group>"; };
 		9DE95F6E1C3BF8EB0061BCF1 /* 风味儿.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "风味儿.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE95F721C3BF8EB0061BCF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DE95F741C3BF8EB0061BCF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +152,10 @@
 		9DE95F921C3BF8EB0061BCF1 /* 风味儿UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "风味儿UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE95F961C3BF8EB0061BCF1 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		9DE95F981C3BF8EB0061BCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEF4A511C4496000039DDEE /* ClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTableViewCell.h; sourceTree = "<group>"; };
+		9DEF4A521C4496000039DDEE /* ClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTableViewCell.m; sourceTree = "<group>"; };
+		9DEF4A541C44D3650039DDEE /* AddTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTimerViewController.h; sourceTree = "<group>"; };
+		9DEF4A551C44D3650039DDEE /* AddTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTimerViewController.m; sourceTree = "<group>"; };
 		9DF8B68F1C3F9D2A00BE4066 /* MenuSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSearchViewController.h; sourceTree = "<group>"; };
 		9DF8B6901C3F9D2A00BE4066 /* MenuSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSearchViewController.m; sourceTree = "<group>"; };
 		B4176925BB697F63642AA16E /* Pods-风味儿.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-风味儿.debug.xcconfig"; path = "Pods/Target Support Files/Pods-风味儿/Pods-风味儿.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +195,37 @@
 				45AE195A85ACC63EA7C18BF1 /* Pods-风味儿.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D085C091C43909E002F3273 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D085C0A1C43909E002F3273 /* BEMAnalogClockView.h */,
+				9D085C0B1C43909E002F3273 /* BEMAnalogClockView.m */,
+				9D085C0C1C43909E002F3273 /* KSMHand.h */,
+				9D085C0D1C43909E002F3273 /* KSMHand.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9D085C131C439362002F3273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DEF4A511C4496000039DDEE /* ClockTableViewCell.h */,
+				9DEF4A521C4496000039DDEE /* ClockTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D085C141C439369002F3273 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D085C101C439359002F3273 /* CookTimerViewController.h */,
+				9D085C111C439359002F3273 /* CookTimerViewController.m */,
+				9DEF4A541C44D3650039DDEE /* AddTimerViewController.h */,
+				9DEF4A551C44D3650039DDEE /* AddTimerViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		9D72765E1C3F2DFC006C122F /* View */ = {
@@ -352,6 +399,7 @@
 		9DBA967A1C3C911800E38157 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9DCD54621C460395003DC3F5 /* bg.caf */,
 				9D7D7CB51C3E13E200B42438 /* placeImage.png */,
 				9DBA96EB1C3CAE9F00E38157 /* MenuList.plist */,
 				9DE95F7D1C3BF8EB0061BCF1 /* Assets.xcassets */,
@@ -363,6 +411,7 @@
 		9DBA967B1C3C911800E38157 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9D085C091C43909E002F3273 /* Classes */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -451,6 +500,8 @@
 		9DBA96F11C3CBA0D00E38157 /* CookTimer */ = {
 			isa = PBXGroup;
 			children = (
+				9D085C141C439369002F3273 /* ViewController */,
+				9D085C131C439362002F3273 /* View */,
 			);
 			path = CookTimer;
 			sourceTree = "<group>";
@@ -771,15 +822,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D085C0F1C43909E002F3273 /* KSMHand.m in Sources */,
 				9D6CB8F41C41E77C0047EDBE /* MaterialMenuViewController.m in Sources */,
 				9D7D7CB81C3E1DA400B42438 /* Foundation+Log.m in Sources */,
 				9D8FDE6D1C413AEE001AC345 /* MaterialMenuCell.m in Sources */,
 				9D8FDE5B1C40FA16001AC345 /* FoodMaterialsModel.m in Sources */,
+				9D085C0E1C43909E002F3273 /* BEMAnalogClockView.m in Sources */,
 				9DBA97141C3CD8CE00E38157 /* MenuSearchNetManager.m in Sources */,
 				9DE95F761C3BF8EB0061BCF1 /* AppDelegate.m in Sources */,
 				9D7D7CA51C3DF1D500B42438 /* MenuSortModel.m in Sources */,
 				9D8FDE601C412240001AC345 /* MaterialCartViewController.m in Sources */,
 				9D8FDE581C40DB2A001AC345 /* DatabaseManager.m in Sources */,
+				9DEF4A561C44D3650039DDEE /* AddTimerViewController.m in Sources */,
 				9D7D7CAC1C3DFF9100B42438 /* MenuViewController.m in Sources */,
 				9DBA970B1C3CD49C00E38157 /* NetManager.m in Sources */,
 				9DBA96F91C3CBCBD00E38157 /* MenuListModel.m in Sources */,
@@ -790,6 +844,7 @@
 				9DBA97051C3CC2BA00E38157 /* NSObject+MJParse.m in Sources */,
 				9DBA971F1C3CEBC700E38157 /* MenuSortViewController.m in Sources */,
 				9DF8B6911C3F9D2A00BE4066 /* MenuSearchViewController.m in Sources */,
+				9D085C121C439359002F3273 /* CookTimerViewController.m in Sources */,
 				9DBA97081C3CCE1800E38157 /* NSObject+AFNet.m in Sources */,
 				9DBA970E1C3CD85600E38157 /* MenuListNetManager.m in Sources */,
 				9D7D7CB31C3E00C700B42438 /* TableViewCell.m in Sources */,
@@ -798,6 +853,7 @@
 				9DE95F731C3BF8EB0061BCF1 /* main.m in Sources */,
 				9D7D7CA21C3DEDAB00B42438 /* MenuSortSingleton.m in Sources */,
 				9DBA97111C3CD88100E38157 /* MenuDescNetManager.m in Sources */,
+				9DEF4A531C4496000039DDEE /* ClockTableViewCell.m in Sources */,
 				9D7D7CBE1C3E879200B42438 /* UIScrollView+Refresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

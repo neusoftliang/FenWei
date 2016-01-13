@@ -51,6 +51,6 @@
 #import <Masonry.h>
 #import <BlocksKit.h>
 #import <BlocksKit+UIKit.h>
-
+#import <NSTimer+BlocksKit.h>
 
 #endif /* PrefixHeader_pch */

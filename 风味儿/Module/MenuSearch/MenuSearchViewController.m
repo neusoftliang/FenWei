@@ -71,4 +71,8 @@
     self.menuListTabel.FoodList_array = nil;
     [self searchBarCancelButtonClicked:self.searchBar];
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.menuListTabel reloadData];
+}
 @end
