@@ -14,6 +14,7 @@ pod 'FMDB'
 pod 'RESideMenu'
 pod 'MBProgressHUD'
 pod 'MJExtension'
+pod 'EaseMobSDKFull', :git => 'https://github.com/easemob/sdk-ios-cocoapods-integration.git'
 
 end
 
