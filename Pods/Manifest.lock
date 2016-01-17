@@ -32,23 +32,23 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - FMDB (2.5):
-    - FMDB/standard (= 2.5)
-  - FMDB/common (2.5)
-  - FMDB/standard (2.5):
-    - FMDB/common
+  - EaseMobSDKFull (2.2.1.2)
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
-  - MJExtension (3.0.8)
-  - MJRefresh (3.0.8)
+  - MJExtension (3.0.9)
+  - MJRefresh (3.1.0)
   - RESideMenu (4.0.7)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
+  - SDWebImage (3.7.4):
+    - SDWebImage/Core (= 3.7.4)
+  - SDWebImage/Core (3.7.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.1.0)
   - BlocksKit
+  - EaseMobSDKFull (from `https://github.com/easemob/sdk-ios-cocoapods-integration.git`)
   - FMDB
   - Masonry
   - MBProgressHUD
@@ -57,15 +57,25 @@ DEPENDENCIES:
   - RESideMenu
   - SDWebImage
 
+EXTERNAL SOURCES:
+  EaseMobSDKFull:
+    :git: https://github.com/easemob/sdk-ios-cocoapods-integration.git
+
+CHECKOUT OPTIONS:
+  EaseMobSDKFull:
+    :commit: f27db4da9c6285f91a71811c2d55af8427368dbf
+    :git: https://github.com/easemob/sdk-ios-cocoapods-integration.git
+
 SPEC CHECKSUMS:
   AFNetworking: d397c9a76a60c670cbcd33f3ff2c5f961f724cbc
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  EaseMobSDKFull: f8d6281b9b58b90d5594fe7d40e1529790035d65
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  MJExtension: 12d2875959b4a0f936ae86b22a1eb6b0251c50ba
-  MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
+  MJExtension: 116781b18cb25cee39619e16617f62bb7433ea4e
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
 
 COCOAPODS: 0.39.0

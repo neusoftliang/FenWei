@@ -32,9 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configCollectionView];
+    self.tabBarController.tabBar.tintColor = [UIColor orangeColor];
 }
-
-
 
 #pragma mark --- 配置collectionView
 - (UICollectionView *)menuCollection {
@@ -91,8 +90,8 @@
 //定义每个UICollectionView 的大小（返回CGSize：宽度和高度）
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height=(self.view.bounds.size.width-4*kMargin)/3;
-    return CGSizeMake(height, height);
+    CGFloat width=(self.view.bounds.size.width-4*kMargin)/3;
+    return CGSizeMake(width, width-40);
 }
 //定义每个UICollectionView 的间距（返回UIEdgeInsets：上、左、下、右）
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section

@@ -50,7 +50,7 @@
         <scene sceneID="DOm-bB-XxF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SaP-RT-S1r" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" id="50E-vM-iGX"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="mainNormal" selectedImage="MainFull" id="50E-vM-iGX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qbi-E5-RVT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -87,7 +87,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Ve0-xE-rnb">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="T80-Sh-tQf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T80-Sh-tQf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gCC-nH-1tC">
                         <autoresizingMask key="autoresizingMask"/>
@@ -98,6 +98,7 @@
                         <segue destination="UsV-aW-kYc" kind="relationship" relationship="viewControllers" id="Hb0-dH-8aP"/>
                         <segue destination="NZW-Dv-ab7" kind="relationship" relationship="viewControllers" id="CoZ-S0-bMd"/>
                         <segue destination="zWq-me-B7w" kind="relationship" relationship="viewControllers" id="LC7-1R-mhX"/>
+                        <segue destination="RLq-ET-Eug" kind="relationship" relationship="viewControllers" id="gkg-GY-T7O"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6z-Ht-sVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,7 +109,7 @@
         <scene sceneID="1ba-Br-LZr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UsV-aW-kYc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="搜索" id="owD-O3-Xm2"/>
+                    <tabBarItem key="tabBarItem" title="搜索" image="search" selectedImage="searchfull" id="owD-O3-Xm2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Ca-zF-Cit">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -445,7 +446,7 @@
                                     <constraint firstAttribute="height" constant="45" id="iYE-qQ-8D4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入提醒的内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amd-fY-e5z">
@@ -500,11 +501,31 @@
             </objects>
             <point key="canvasLocation" x="1673" y="1463"/>
         </scene>
+        <!--Message View Controller-->
+        <scene sceneID="5pJ-HY-e1w">
+            <objects>
+                <viewController storyboardIdentifier="chat" hidesBottomBarWhenPushed="YES" id="9H2-uD-fmm" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N99-HP-tOL"/>
+                        <viewControllerLayoutGuide type="bottom" id="sRR-nm-vzZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uGb-WZ-Rl6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZhR-JU-Amk"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmL-gd-2UN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="1463"/>
+        </scene>
         <!--购菜筐-->
         <scene sceneID="QKL-nr-MlB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NZW-Dv-ab7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="购菜筐" id="esX-Op-ndT"/>
+                    <tabBarItem key="tabBarItem" title="购菜筐" image="cart" selectedImage="cartfull" id="esX-Op-ndT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W0g-sz-Ohx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -560,7 +581,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="QBx-MR-5mN" firstAttribute="leading" secondItem="Mdk-1U-fGW" secondAttribute="leading" constant="100" id="Q18-G4-VTO"/>
                                             <constraint firstAttribute="height" constant="38" id="a4L-r5-DkG"/>
@@ -617,13 +638,13 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBz-HV-p6t" userLabel="line">
                                                     <rect key="frame" x="86" y="5" width="1" height="35"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="1" id="lC4-be-tKp"/>
                                                         <constraint firstAttribute="height" constant="35" id="qNw-yq-pyb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vFr-Fw-W2X">
@@ -640,17 +661,17 @@
                                                     <rect key="frame" x="95" y="0.0" width="162" height="43.5"/>
                                                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:20:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ub1-iB-r90">
                                                     <rect key="frame" x="8" y="0.0" width="69" height="44"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="69" id="Wim-ju-CWQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -704,6 +725,25 @@
             </objects>
             <point key="canvasLocation" x="1673" y="784.99999999999989"/>
         </scene>
+        <!--会话-->
+        <scene sceneID="kgO-eZ-keF">
+            <objects>
+                <viewController id="f6M-uY-Nuf" customClass="ConversationListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ss-Rg-ezi"/>
+                        <viewControllerLayoutGuide type="bottom" id="PKB-1v-uli"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q7F-M3-ACy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="会话" id="a5d-w9-ciM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyi-y4-zZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="784"/>
+        </scene>
         <!--定时-->
         <scene sceneID="MYz-fE-4PE">
             <objects>
@@ -723,11 +763,36 @@
             </objects>
             <point key="canvasLocation" x="1673" y="95"/>
         </scene>
+        <!--消息-->
+        <scene sceneID="Qmu-gq-lqI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RLq-ET-Eug" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" id="rd2-gd-UoV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KQt-7B-ccH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f6M-uY-Nuf" kind="relationship" relationship="rootViewController" id="XVr-wW-9VX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5e-Dp-ftc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="95"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="MainFull" width="32" height="32"/>
+        <image name="cart" width="32" height="32"/>
+        <image name="cartfull" width="32" height="32"/>
+        <image name="mainNormal" width="32" height="32"/>
         <image name="minus" width="32" height="32"/>
         <image name="placeImage.png" width="300" height="210"/>
         <image name="plus" width="32" height="32"/>
         <image name="plus_2" width="32" height="32"/>
+        <image name="search" width="32" height="32"/>
+        <image name="searchfull" width="32" height="32"/>
     </resources>
 </document>

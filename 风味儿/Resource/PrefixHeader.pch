@@ -39,7 +39,7 @@
 #import <UIImageView+WebCache.h>
 #import <SDImageCache.h>
 //头部刷新
-//#import <MJRefresh.h>
+#import <MJRefresh.h>
 #import "UIScrollView+Refresh.h"
 
 /*按照功能需求 可选  */
@@ -52,5 +52,6 @@
 #import <BlocksKit.h>
 #import <BlocksKit+UIKit.h>
 #import <NSTimer+BlocksKit.h>
-
+#import "EaseUI.h"
+#import <EaseMobSDKFull/EaseMob.h>
 #endif /* PrefixHeader_pch */
